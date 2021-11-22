@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<title>Audio Recording Demo</title>
+
+	<!-- Latest compiled and minified Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div style="max-width: 28em;">
+		<div>
+			<select id="bufsize">
+				<option value="512">512</option>
+				<option value="1024">1024</option>
+				<option value="2048">2048</option>
+				<option value="4096">4096</option>
+				<option value="8192">8192</option>
+				<option value="16384" selected>16384</option>
+			</select>
+			<label for="bufsize">script processor buffer size</label><br>
+			<input type="checkbox" id="analyser" checked>
+			<label for="analyser">create analyser</label><br>
+		</div>
+		<div id="controls">
+			<button id="startButton">Start</button>
+			<button id="stopButton" disabled>Stop</button>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+
+</body>
+</html>
